@@ -39,10 +39,16 @@ header {
   list-style: none;
   margin-right: 36px;
 }
+.menu li a:hover {
+  color: darkgrey;
+}
 .menu li a {
   text-decoration: none;
   color: #ffffff;
   font-size: 16px;
+}
+.menu-icon {
+  display: none;
 }
 .btn {
   text-decoration: none;
@@ -61,7 +67,9 @@ header {
   font-size: 16px;
   line-height: 24px;
 }
-
+.btn:hover {
+  color: darkgrey;
+}
 /* --------------------
         Banner
 --------------------- */
@@ -87,6 +95,11 @@ header {
   font-size: 24px;
   line-height: 24px;
 }
+.banner-img:hover {
+  position: relative;
+  transform: scale(1.1) rotate(15deg);
+  transition-duration: 0.5s;
+}
 
 /* --------------------
         Players
@@ -103,6 +116,11 @@ header {
 .player {
   width: 300px;
   padding: 15px 15px 33px 15px;
+}
+.player:hover {
+  position: relative;
+  transform: scale(1.05);
+  transition-duration: 0.5s;
 }
 .player h3 {
   font-size: 28px;
@@ -146,7 +164,7 @@ header {
 }
 
 /* --------------------
-      Highlights
+      Footer
 --------------------- */
 footer {
   width: 484px;
@@ -184,4 +202,130 @@ footer p {
   color: #000000;
   text-align: center;
   margin: 0px;
+}
+
+/* -----------------------------------------
+      Media Quary For Mobile Responsive
+------------------------------------------ */
+
+@media only screen and (max-width: 768px) {
+  /* --------------------
+      Navbar
+--------------------- */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 330px;
+    padding-top: 33px;
+  }
+  .menu ul {
+    margin: 0px;
+    padding: 0px;
+    display: block;
+    height: 100%;
+    margin-right: 0px;
+  }
+  .menu li {
+    margin-right: 0px;
+  }
+  .menu-icon {
+    display: block;
+    margin-right: 0px;
+  }
+  .fa-bars {
+    font-size: 30px;
+    color: #ffffff;
+  }
+  .menu-item {
+    display: none;
+  }
+  /* --------------------
+      banner
+--------------------- */
+  .banner {
+    display: grid;
+    grid-row-gap: 50px;
+    grid-template-columns: 1fr;
+    padding: 50px 0px;
+  }
+  .banner-txt {
+    width: 278px;
+    margin: auto;
+  }
+  .banner-txt h1 {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 50px;
+    color: #ffffff;
+    width: 278px;
+    height: 138px;
+    margin-bottom: 27px;
+    margin-top: 0px;
+  }
+  .banner-img {
+    margin: auto;
+  }
+  .banner-img img {
+    width: 330px;
+  }
+
+  /* --------------------
+        Players
+--------------------- */
+  .players {
+    display: grid;
+    grid-template-columns: repeat(1, 330px);
+    grid-row-gap: 24px;
+    width: 330px;
+    margin: auto;
+    margin-top: 50px;
+  }
+
+  /* --------------------
+      Highlights
+--------------------- */
+  .highlight {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 30px;
+    width: 330px;
+    margin: auto;
+    margin-top: 60px;
+  }
+  .highlight-txt {
+    width: 330px;
+    margin-right: 0px;
+  }
+  .highlight-txt h1 {
+    font-size: 30px;
+    line-height: 40px;
+    width: 294px;
+    height: 80px;
+  }
+  .highlight-img img {
+    width: 330px;
+  }
+  /* --------------------
+      Footer
+--------------------- */
+  footer {
+    width: 100%;
+    margin: auto;
+    margin-top: 43px;
+    margin-bottom: 50px;
+  }
+  .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .logo img {
+    height: 63px;
+    margin-right: 25px;
+  }
+  .logo-txt {
+    font-size: 30px;
+    line-height: 30px;
+  }
 }
