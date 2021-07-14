@@ -208,7 +208,7 @@ footer p {
       Media Quary For Mobile Responsive
 ------------------------------------------ */
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   /* --------------------
       Navbar
   --------------------- */
@@ -327,5 +327,107 @@ footer p {
   .logo-txt {
     font-size: 30px;
     line-height: 30px;
+  }
+}
+/* -----------------------------------------
+      Media Quary For Tablet Responsive
+------------------------------------------ */
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  /* --------------------
+      Navbar
+  --------------------- */
+  .navbar {
+    width: 90%;
+    padding-top: 30px;
+  }
+
+  .menu li {
+    margin-right: 25px;
+  }
+  /* --------------------
+      banner
+  --------------------- */
+  .banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+  }
+  .banner-txt {
+    margin: 0px;
+  }
+  .banner-txt h1 {
+    font-size: 46px;
+    line-height: 60px;
+    width: 350px;
+    height: 180px;
+    margin-bottom: 27px;
+    margin-top: 0px;
+  }
+  .banner-img {
+    margin: 0px;
+  }
+  .banner-img img {
+    width: 450px;
+  }
+
+  /* --------------------
+        Players
+  --------------------- */
+  .players {
+    display: grid;
+    grid-template-columns: repeat(2, 330px);
+    grid-row-gap: 24px;
+    width: 690px;
+    margin: auto;
+    margin-top: 50px;
+  }
+
+  /* --------------------
+      Highlights
+  --------------------- */
+  .highlight {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 60px;
+    margin: 0px;
+  }
+  .highlight-txt {
+    width: 380px;
+    margin-right: 0px;
+  }
+  .highlight-txt h1 {
+    font-size: 46px;
+    line-height: 60px;
+    width: 350px;
+    height: 180px;
+  }
+  .highlight-img img {
+    width: 450px;
+    margin: 0px;
+  }
+  /* --------------------
+      Footer
+  --------------------- */
+  footer {
+    width: 100%;
+    margin: auto;
+    margin-top: 43px;
+    margin-bottom: 50px;
+  }
+  .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .logo img {
+    height: 80px;
+    margin-right: 25px;
+  }
+  .logo-txt {
+    font-size: 70px;
+    line-height: 70px;
   }
 }
