@@ -237,6 +237,9 @@ footer p {
     font-size: 30px;
     color: #ffffff;
   }
+  .fa-bars:hover {
+    color: #969bab;
+  }
   .menu-item {
     display: none;
   }
@@ -329,6 +332,7 @@ footer p {
     line-height: 30px;
   }
 }
+
 /* -----------------------------------------
       Media Quary For Tablet Responsive
 ------------------------------------------ */
