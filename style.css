@@ -1,7 +1,181 @@
 /* --------------------
+       Fonts
+--------------------- */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Niconne&display=swap");
+
+/* --------------------
        Common CSS
 --------------------- */
 body {
   margin: 0px;
   padding: 0px;
+  font-family: "Poppins", sans-serif;
+}
+
+/* --------------------
+     Navigation Bar
+--------------------- */
+header {
+  background: #2d25a0;
+  margin: 0px;
+  padding: 0px;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 42px 124px 0px 156px;
+  height: 44px;
+}
+.menu {
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+}
+.menu li {
+  list-style: none;
+  margin-right: 36px;
+}
+.menu li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 16px;
+}
+.btn {
+  text-decoration: none;
+  color: #ffffff;
+  background: #e02c6d;
+  padding: 10px 24px;
+  display: inline-flex;
+}
+.btn-icon {
+  margin-right: 8px;
+  font-size: 24px;
+  line-height: 24px;
+}
+.btn-txt {
+  font-size: 16px;
+  line-height: 24px;
+}
+.btn-arrow {
+  margin-left: 8px;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+/* --------------------
+        Banner
+--------------------- */
+.banner {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 140px 86px 156px;
+}
+.banner-txt h1 {
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 80px;
+  color: #ffffff;
+  width: 485px;
+  height: 230px;
+  margin-bottom: 27px;
+}
+
+/* --------------------
+        Players
+--------------------- */
+.players {
+  display: grid;
+  grid-template-columns: repeat(3, 330px);
+  grid-row-gap: 27px;
+  grid-column-gap: 30px;
+  width: 1050px;
+  margin: auto;
+  margin-top: 70px;
+}
+.player {
+  width: 300px;
+  padding: 15px 15px 33px 15px;
+}
+.player h3 {
+  font-size: 28px;
+  line-height: 40px;
+  color: #18191f;
+  margin-top: 16px;
+  margin-bottom: 10px;
+}
+.player p {
+  font-size: 16px;
+  line-height: 26px;
+  color: #6c6c6c;
+}
+
+/* --------------------
+      Highlights
+--------------------- */
+.highlight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 165px;
+}
+.highlight-txt {
+  width: 469px;
+  margin-right: 65px;
+}
+.highlight-txt h1 {
+  font-size: 48px;
+  line-height: 60px;
+  color: #0a0826;
+  margin-top: 0px;
+  margin-bottom: 8px;
+}
+.highlight-txt p {
+  font-size: 16px;
+  line-height: 28px;
+  color: #6c6c6c;
+  margin-top: 0px;
+  margin-bottom: 24px;
+}
+
+/* --------------------
+      Footer
+--------------------- */
+footer {
+  width: 484px;
+  margin: 158px auto 63px;
+}
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo img {
+  height: 100px;
+  margin-right: 35px;
+}
+.logo-txt {
+  font-family: Niconne;
+  font-size: 72.5806px;
+  line-height: 72px;
+  color: #10437a;
+}
+.social-icon {
+  width: 170px;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  margin: 20px auto;
+}
+.fab {
+  font-size: 17px;
+  color: #969bab;
+}
+footer p {
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+  text-align: center;
+  margin: 0px;
 }
