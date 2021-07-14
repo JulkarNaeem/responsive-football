@@ -25,8 +25,10 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 42px 124px 0px 156px;
   height: 44px;
+  width: 1141px;
+  margin: auto;
+  padding-top: 42px;
 }
 .menu {
   margin: 0px;
@@ -48,6 +50,7 @@ header {
   background: #e02c6d;
   padding: 10px 24px;
   display: inline-flex;
+  align-items: center;
 }
 .btn-icon {
   margin-right: 8px;
@@ -58,19 +61,17 @@ header {
   font-size: 16px;
   line-height: 24px;
 }
-.btn-arrow {
-  margin-left: 8px;
-  font-size: 24px;
-  line-height: 24px;
-}
 
 /* --------------------
         Banner
 --------------------- */
 .banner {
   display: flex;
-  justify-content: space-between;
-  padding: 50px 140px 86px 156px;
+  justify-content: center;
+  padding: 50px 0px 86px 0px;
+}
+.banner-txt {
+  margin-right: 100px;
 }
 .banner-txt h1 {
   font-weight: bold;
@@ -80,6 +81,11 @@ header {
   width: 485px;
   height: 230px;
   margin-bottom: 27px;
+}
+.btn-arrow {
+  margin-left: 8px;
+  font-size: 24px;
+  line-height: 24px;
 }
 
 /* --------------------
@@ -140,7 +146,7 @@ header {
 }
 
 /* --------------------
-      Footer
+      Highlights
 --------------------- */
 footer {
   width: 484px;
